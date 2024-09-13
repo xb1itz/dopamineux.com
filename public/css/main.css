@@ -1,0 +1,655 @@
+body {
+  color: #000000;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'Open Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+  overflow-y: scroll;
+  -ms-overflow-style: scrollbar;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body * {
+  font-family: 'Open Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body input,
+body button,
+body select,
+body textarea {
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 300;
+}
+strong {
+  font-weight: 600;
+}
+.btn {
+  border-radius: 24px;
+  font-size: 18px;
+  border: none;
+  padding: 10px 35px;
+  outline: none;
+}
+.btn.btn-primary {
+  background: #f92767;
+  color: #FFF;
+  outline: none;
+}
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+/*===================================
+=            Main styles            =
+===================================*/
+html,
+body {
+  height: 100%;
+}
+header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+header .logo {
+  width: 135px;
+  margin-top: 50px;
+}
+header .navbar-nav {
+  margin-top: 50px;
+}
+header .navbar-nav li a {
+  color: #fff;
+  font-size: 18px;
+}
+header .navbar-nav li a:hover {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.1s linear;
+  -moz-transition: opacity 0.1s linear;
+  -o-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+}
+header .navbar-nav li a.cta {
+  background: #FFF;
+  color: #544f4f;
+  font-size: 16px;
+  padding: 10px 25px;
+  margin: 5px 0 0 15px;
+  border-radius: 24px;
+}
+header .navbar-nav li a.cta:hover {
+  background: #fff;
+}
+header .navbar-nav li a:hover,
+header .navbar-nav li a:focus {
+  background: none;
+}
+main {
+  width: 100%;
+  position: relative;
+}
+main .hero {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f92767+0,c8194e+100 */
+  background: #f92767;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f92767 0%, #c8194e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f92767 0%, #c8194e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f92767 0%, #c8194e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f92767', endColorstr='#c8194e', GradientType=0);
+  /* IE6-9 */
+  min-height: 690px;
+  padding-top: 160px;
+}
+main .hero h1 {
+  line-height: 38px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 120px;
+}
+main .problems h1 {
+  margin-top: 100px;
+  font-size: 36px;
+}
+main .problems h1 + p {
+  font-size: 18px;
+  font-weight: 300;
+}
+main .problems .problem {
+  margin-top: 80px;
+  height: 200px;
+  line-height: 200px;
+}
+main .problems .problem h2 {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  color: #f92767;
+  font-weight: 300;
+  font-size: 24px;
+}
+main .cta.dark {
+  background: #f92767;
+  margin-top: 100px;
+  padding-bottom: 80px;
+}
+main .cta.dark h1 {
+  margin-top: 80px;
+}
+main .cta.dark h1,
+main .cta.dark p {
+  color: #FFF;
+}
+main .cta.dark strong {
+  font-weight: 500;
+}
+main .cta.dark button {
+  background: #FFF;
+  color: #000000;
+}
+main .cta.dark form .form-group input,
+main .cta.dark form .form-group textarea {
+  border-bottom: 2px solid #FFF;
+  background: none;
+  color: #FFF;
+}
+main .cta.dark form .form-group input:-webkit-autofill,
+main .cta.dark form .form-group textarea:-webkit-autofill {
+  -webkit-text-fill-color: #FFF;
+}
+main .cta.dark form .form-group .form-control-placeholder {
+  color: #FFF;
+}
+main .cta.dark form .form-group .form-control:focus + .form-control-placeholder,
+main .cta.dark form .form-group .form-control.dirty + .form-control-placeholder {
+  color: #FFF;
+}
+main .cta.dark .alert {
+  background: #FFF;
+}
+main .cta h1 {
+  margin-top: 150px;
+}
+main .cta h1 span {
+  color: #f92767;
+}
+main .cta h1 + p {
+  font-size: 18px;
+  font-weight: 300;
+}
+main .cta button {
+  margin-top: 15px;
+  transition: all 200ms;
+}
+main .cta form {
+  margin-top: 30px;
+}
+main .cta form .form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+main .cta form .form-group input,
+main .cta form .form-group textarea {
+  border: none;
+  box-shadow: none;
+  border-bottom: 2px solid #f92767;
+  border-radius: 0;
+}
+main .cta form .form-group .form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 3px 0 0 13px;
+  pointer-events: none;
+  color: #aaa;
+  transition: all 200ms;
+}
+main .cta form .form-group .form-control:focus + .form-control-placeholder,
+main .cta form .form-group .form-control.dirty + .form-control-placeholder {
+  color: #f92767;
+  font-size: 75%;
+  top: -20px;
+}
+main .cta .alert {
+  background: #96fda8;
+  margin-top: 30px;
+}
+main .how {
+  background: url(../images/process_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+main .how h1 {
+  color: #FFF;
+  margin-top: 100px;
+}
+main .how h1 + p {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+}
+main .how .part .visual {
+  text-align: center;
+  margin-top: 50px;
+  min-height: 250px;
+  line-height: 250px;
+}
+main .how .part h2 {
+  padding: 0 15px 0 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFF;
+}
+main .how .part p {
+  padding: 0 15px 0 0;
+  color: #FFF;
+  font-weight: 300;
+}
+main .services h1 {
+  font-size: 36px;
+  margin-top: 100px;
+}
+main .services h1 + p {
+  font-size: 18px;
+  font-weight: 300;
+}
+main .services .service {
+  margin-top: 80px;
+}
+main .services .service .visual {
+  height: 120px;
+  line-height: 120px;
+}
+main .services .service .title {
+  height: 90px;
+  line-height: 90px;
+}
+main .services .service h2 {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  color: #f92767;
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0;
+}
+main .services .service p span {
+  color: #f92767;
+}
+footer {
+  background: url(../images/footer_bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+}
+footer h1 {
+  margin-top: 80px;
+  color: #FFF;
+}
+footer p {
+  color: #FFF;
+  margin-bottom: 80px;
+  font-weight: 300;
+}
+footer a {
+  color: #FFF;
+}
+footer a:hover {
+  color: #f92767;
+}
+footer .visual {
+  margin-top: 130px;
+  opacity: .8;
+  margin-left: 50px;
+}
+/*=====================================
+=            Media queries            =
+=====================================*/
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .logo {
+    margin: 50px auto 0;
+  }
+  header .navbar-toggle .icon-bar {
+    background: #fff;
+  }
+  header .navbar-collapse {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background: #ffffff;
+  }
+  header .navbar-collapse .navbar-nav {
+    padding: 50px;
+  }
+  header .navbar-collapse .navbar-toggle .icon-bar {
+    background: #f92767;
+  }
+  header .navbar-collapse li a {
+    color: #000;
+    font-size: 18px;
+  }
+  header .navbar-collapse li a.cta {
+    background: #f92767;
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px 25px;
+    margin: 5px 0 0 15px;
+    border-radius: 24px;
+  }
+  header .navbar-collapse li a.cta:hover {
+    background: #e7064b;
+    color: #FFF;
+  }
+  main .hero {
+    min-height: initial;
+  }
+  main .hero h1 {
+    font-size: 24px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.2em;
+  }
+  main .hero img {
+    margin: 40px auto;
+    width: 75%;
+  }
+  main .problems h1 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  main .problems .problem {
+    height: initial;
+    line-height: initial;
+    margin-top: 30px;
+  }
+  main .problems .problem h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  main .problems .problem img {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+  }
+  main .cta h1 {
+    line-height: 1.2em;
+  }
+  main .how h2 {
+    text-align: center;
+  }
+  main .how p {
+    text-align: center;
+  }
+  footer h1 {
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer .visual {
+    margin: 0 auto 60px;
+    display: block;
+  }
+}
+/*==================================
+=            Animations            =
+==================================*/
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*Keyframes*/
+@keyframes DrawLine {
+  0% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 1;
+  }
+  22% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 1;
+  }
+  38% {
+    stroke-dashOffset: 125;
+    stroke-dasharray: 120;
+    stroke-opacity: 1;
+  }
+  38.1% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 0;
+  }
+  48% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 1;
+  }
+  64% {
+    stroke-dashOffset: 125;
+    stroke-dasharray: 120;
+    stroke-opacity: 1;
+  }
+  64.1% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 0;
+  }
+  74% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 1;
+  }
+  90% {
+    stroke-opacity: 1;
+    stroke-dashOffset: 125;
+    stroke-dasharray: 120;
+  }
+  90.1% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 0;
+  }
+}
+@keyframes DrawLineBack {
+  0% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 1;
+  }
+  22% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 1;
+  }
+  38% {
+    stroke-dashOffset: -114;
+    stroke-dasharray: 120;
+    stroke-opacity: 1;
+  }
+  38.1% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 0;
+  }
+  48% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 1;
+  }
+  64% {
+    stroke-dashOffset: -114;
+    stroke-dasharray: 120;
+    stroke-opacity: 1;
+  }
+  64.1% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 0;
+  }
+  74% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 1;
+  }
+  90% {
+    stroke-opacity: 1;
+    stroke-dashOffset: -114;
+    stroke-dasharray: 120;
+  }
+  90.1% {
+    stroke-dashOffset: 0;
+    stroke-dasharray: 120;
+    stroke-opacity: 0;
+  }
+}
+@keyframes nudgeMouse {
+  0% {
+    transform: translateY(0) translateX(-50%);
+  }
+  22% {
+    transform: translateY(0px) translateX(-50%);
+  }
+  38% {
+    transform: translateY(9px) translateX(-50%);
+  }
+  48% {
+    transform: translateY(0px) translateX(-50%);
+  }
+  64% {
+    transform: translateY(9px) translateX(-50%);
+  }
+  74% {
+    transform: translateY(0px) translateX(-50%);
+  }
+  90% {
+    transform: translateY(9px) translateX(-50%);
+  }
+}
+/*Text*/
+@keyframes nudgeText {
+  0% {
+    transform: translateY(0) translateX(-50%) scaleY(1);
+    opacity: 1;
+  }
+  22% {
+    transform: translateY(0px) translateX(-50%) scaleY(1);
+    opacity: 1;
+  }
+  38% {
+    transform: translateY(5px) translateX(-50%) scaleY(0.9);
+    opacity: 0.5;
+  }
+  48% {
+    transform: translateY(0px) translateX(-50%) scaleY(1);
+    opacity: 1;
+  }
+  64% {
+    transform: translateY(5px) translateX(-50%) scaleY(0.9);
+    opacity: 0.5;
+  }
+  74% {
+    transform: translateY(0px) translateX(-50%) scaleY(1);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(5px) translateX(-50%) scaleY(0.9);
+    opacity: 0.5;
+  }
+}
+/*Mouse wheel*/
+@keyframes trackBallSlide {
+  0% {
+    transform: translateY(20px) scale(1);
+    opacity: 1;
+  }
+  22% {
+    transform: translateY(20px) scale(1);
+    opacity: 1;
+  }
+  26% {
+    transform: translateY(30px) scale(0.9);
+    opacity: 1;
+  }
+  34% {
+    transform: translateY(55px) scale(0.1);
+    opacity: 0;
+  }
+  41% {
+    transform: translateY(30px) scale(0);
+    opacity: 0.3;
+  }
+  48% {
+    transform: translateY(20px) scale(1);
+    opacity: 1;
+  }
+  52% {
+    transform: translateY(30px) scale(0.9);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(55px) scale(0.1);
+    opacity: 0;
+  }
+  67% {
+    transform: translateY(30px) scale(0);
+    opacity: 0.3;
+  }
+  74% {
+    transform: translateY(20px) scale(1);
+    opacity: 1;
+  }
+  78% {
+    transform: translateY(30px) scale(0.9);
+    opacity: 1;
+  }
+  86% {
+    transform: translateY(55px) scale(0.1);
+    opacity: 0;
+  }
+  93% {
+    transform: translateY(30px) scale(0);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(20px) scale(1);
+    opacity: 1;
+  }
+}

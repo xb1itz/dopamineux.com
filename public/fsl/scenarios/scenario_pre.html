@@ -1,0 +1,293 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dopamine User Experience Design</title>
+
+    <link rel="icon" type="images/png" href="images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- injector:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css?v=1.0.0">
+    <link rel="stylesheet" href="css/main.css?v=1.0.0">
+    <!-- endinjector -->
+</head>
+
+<body>
+	
+	<main id="st-container" class="st-container">
+
+        <div class="menu">
+            <button class="menu-toggle" data-effect="st-effect-4"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button> 
+            <button class="menu-toggle back"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></button> 
+        </div>
+        
+        <nav class="st-menu st-effect-4" id="menu-4">
+            
+            <h2>Scenarios:</h2>
+            <ul id="nav-links" class="nav-links"></ul>
+
+            <div class="logo"><img src="images/logo.png" alt="Dopamine UX"></div>
+        </nav>
+        
+        <div class="st-pusher">
+
+            <div class="st-content">
+                <div class="st-content-inner">
+
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="main">PRE Match scenarios</h1>
+                                <p>
+                                    Scenarios targeting users before particular match starts.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <h2>Legend</h2>
+                        <button class="btn btn-link pull-right" type="button" data-toggle="collapse" data-target="#collapseLegend" aria-expanded="false" aria-controls="collapseLegend">Toggle</button>
+
+                        <div class="row collapse in legend" id="collapseLegend">
+                            <div class="col-md-12">
+                                <p>
+                                    Each scenario represents a particular business case. What steps users take to interact with the system to complete their goals.<br>
+                                    Some of the steps have additional indicators that are explained below:
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li class="trigger">
+                                        <h3>A trigger</h3>
+                                        <p>Represents a point or event where users are being engaged into the scenario.</p>
+                                    </li>
+                                    <li class="investment">
+                                        <h3>Investment</h3>
+                                        <p>A step where a user has to spend mental effort to proceed to further steps of the scenario. This is usually the most challenging moment in the scenario.</p>
+                                    </li>
+                                    <li class="timeout">
+                                        <h3>AFK timeout</h3>
+                                        <p>Away From Keyword moment that represents a temporary break in the scenario, where users are not actively engaged in a system.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li class="notification">
+                                        <h3>Notification</h3>
+                                        <p>Represents an automatic notification that engages user outside of a system.</p>
+                                    </li>
+                                    <li class="reward">
+                                        <h3>The reward</h3>
+                                        <p>A motivator that rewards user for completing whole (or a part of) scenario.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                        <h2 id="scenario1">#1 Upcoming matches</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>The scenario begins when a user navigates to see all match list.</p>
+                            </li>
+                            <li class="step reward">
+                                <h3>2. Match list</h3>
+                                <p>
+                                    System displays all the information related to all upcomming game in single list, where all upcomming matches are shown gighlighted
+                                </p>
+                            </li>
+                        </ul>
+
+
+                        <h2 id="scenario2">#2 Match details</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>The scenario begins when user has an intention to check any information on particular match</p>
+                            </li>
+                            <li class="step investment">
+                                <h3>2. Finding a match</h3>
+                                <p>
+                                    Match can be found in different ways:
+                                    <ul>
+                                        <li>Search feature in navigation</li>
+                                        <li>User's team feed</li>
+                                        <li>Match list</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li class="step">
+                                <h3>3. Focusing on particular match</h3>
+                                <p>
+                                    User click's through to reach a particular match context
+                                </p>
+                            </li>
+                            <li class="step reward">
+                                <h3>4. Match details</h3>
+                                <p>
+                                    All match details are displayed.
+                                    <ul>
+                                        <li>Match time, venue</li>
+                                        <li>Information about playing teams</li>
+                                        <li>Discussions</li>
+                                        <li>Frien's predictions</li>
+                                        <li>CTA to make starting layout</li>
+                                        <li>CTA to make a prediction</li>
+                                    </ul>
+                                </p>
+                            </li>
+                        </ul>
+
+
+
+                        <h2 id="scenario3">#3 Tickets</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>The scenario begins when user has found a particular match.</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>2. Ticket CTA</h3>
+                                <p>
+                                    System offers to purchase match tickets if they are available
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>3. Clich through</h3>
+                                <p>
+                                    User clicks Ticket CTA that leads to external ticketing system.
+                                </p>
+                            </li>
+                        </ul>
+
+                        
+
+                        <h2 id="scenario4">#4 Predictor</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>The scenario begins when user has found a particular match.</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>2. Make prediction CTA</h3>
+                                <p>
+                                    System offers to make prediction
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>3. Clicking through</h3>
+                                <p>
+                                    User clicks on CTA that leads to prediction screen
+                                </p>
+                            </li>
+                            <li class="step">
+                                <h3>4. Prediction screen</h3>
+                                <p>
+                                    System navigates user to screen where they can enter prediction score for particular match. 
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>5. Entering a score</h3>
+                                <p>
+                                    User places his prediction into form and submits it. <br>
+                                </p>
+                            </li>
+                            <li class="step reward">
+                                <h3>5. Reward message</h3>
+                                <p>
+                                    Reward message is showed. <br>
+                                    Additionally sysem shows any predictions made by followed users.
+                                </p>
+                            </li>
+                        </ul>
+
+
+                        <h2 id="scenario5">#5 Friend's predictions</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>The scenario begins when user has found a particular match.</p>
+                            </li>
+                            <li class="step reward">
+                                <h3>2. Friends predictions</h3>
+                                <p>
+                                    If people mustually followed by user made a prediction on particular match, their prediction are showed on match screen. <br>
+                                    If may predictions are made by friends, system provides additional link to see all predictions.
+                                </p>
+                            </li>
+                        </ul>
+
+
+                        <h2 id="scenario6">#6 Other predictions</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>The scenario begins when user has found a particular match.</p>
+                            </li>
+                            <li class="step reward">
+                                <h3>2. Other predictions</h3>
+                                <p>
+                                    Basically case as in <a href="#scenario5">Scenario #5</a>, just unrelated people predictions are shoved in lower visual gravity.
+                                </p>
+                            </li>
+                        </ul>
+
+
+                        <h2 id="scenario7">#7 Predictions and tactics</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>
+                                    The scenario begins when user has found a particular match. It's purpose is to drive more users to create discussion before match.<br>
+                                    In this case the scenario is the same as in <a href="#scenario1">Scenario #1</a>, just use different form template for making a starting IX set.
+                                </p>
+                            </li>
+                        </ul>
+
+                    <footer>
+                        <a href="http://dopamineux.com">
+                            <img class="logo" src="images/logo_invert.png" alt="Dopamine UX">
+                        </a>
+                    </footer>
+
+                </div>
+            </div>
+
+        </div>
+
+
+	</main>
+
+    <script src="bower_components/jquery/dist/jquery.min.js?v=1.0"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js?v=1.0"></script>
+
+    <script src="js/main.js?v=1.0.10"></script>
+
+    <script type="text/template" id="nav-link">
+    <li>
+        <a href="{0}">{1}</a>
+    </li>
+    </script>
+
+</body>
+
+</html>

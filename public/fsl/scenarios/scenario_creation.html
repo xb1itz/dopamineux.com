@@ -1,0 +1,358 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dopamine User Experience Design</title>
+
+    <link rel="icon" type="images/png" href="images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- injector:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css?v=1.0.0">
+    <link rel="stylesheet" href="css/main.css?v=1.0.0">
+    <!-- endinjector -->
+</head>
+
+<body>
+	
+	<main id="st-container" class="st-container">
+
+        <div class="menu">
+            <button class="menu-toggle" data-effect="st-effect-4"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button> 
+            <button class="menu-toggle back"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></button> 
+        </div>
+        
+        <nav class="st-menu st-effect-4" id="menu-4">
+            
+            <h2>Scenarios:</h2>
+            <ul id="nav-links" class="nav-links"></ul>
+
+            <div class="logo"><img src="images/logo.png" alt="Dopamine UX"></div>
+        </nav>
+        
+        <div class="st-pusher">
+
+            <div class="st-content">
+                <div class="st-content-inner">
+
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="main">Content creation</h1>
+                                <p>
+                                    Scenarios enabling users to generate FSL content based upon various intentions.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <h2>Legend</h2>
+                        <button class="btn btn-link pull-right" type="button" data-toggle="collapse" data-target="#collapseLegend" aria-expanded="false" aria-controls="collapseLegend">Toggle</button>
+
+                        <div class="row collapse in legend" id="collapseLegend">
+                            <div class="col-md-12">
+                                <p>
+                                    Each scenario represents a particular business case. What steps users take to interact with the system to complete their goals.<br>
+                                    Some of the steps have additional indicators that are explained below:
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li class="trigger">
+                                        <h3>A trigger</h3>
+                                        <p>Represents a point or event where users are being engaged into the scenario.</p>
+                                    </li>
+                                    <li class="investment">
+                                        <h3>Investment</h3>
+                                        <p>A step where a user has to spend mental effort to proceed to further steps of the scenario. This is usually the most challenging moment in the scenario.</p>
+                                    </li>
+                                    <li class="timeout">
+                                        <h3>AFK timeout</h3>
+                                        <p>Away From Keyword moment that represents a temporary break in the scenario, where users are not actively engaged in a system.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li class="notification">
+                                        <h3>Notification</h3>
+                                        <p>Represents an automatic notification that engages user outside of a system.</p>
+                                    </li>
+                                    <li class="reward">
+                                        <h3>The reward</h3>
+                                        <p>A motivator that rewards user for completing whole (or a part of) scenario.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <h2 id="scenario1">#1 Short post</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>The scenario begins when a user opens the app/site with intension to post a public message.</p>
+                            </li>
+                            <li class="step investment">
+                                <h3>2. Click through</h3>
+                                <p>
+                                    User clicks to post something on their mind
+                                </p>
+                            </li>
+                            <li class="step">
+                                <h3>3. Posting form</h3>
+                                <p>
+                                    System provides single field post form
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>4. Entering a post message</h3>
+                                <p>
+                                    User enters his message into form and submits it. <br>
+                                    User can paste a link that is processed in background crawler to fetch a OG preview. <br>
+                                    Additionally, during this step user can tag other users using @.
+                                </p>
+                            </li>
+                            <li class="step reward">
+                                <h3>5. Post published</h3>
+                                <p>
+                                    New post is showed highlighted in user's feed. <br>
+                                    Post appears on users follower's feed.
+                                </p>
+                                <h3 class="message">5.1. Notification for mentioned users</h3>
+                                <p>Users who were tagged in post receive a nitification</p>
+
+                            </li>
+                        </ul>
+
+                        <h2 id="scenario2">#2 Capture a photo | App only</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>The scenario begins when a user opens the app/site with intension to post a public photo.</p>
+                            </li>
+                            <li class="step investment">
+                                <h3>2. Click through</h3>
+                                <p>
+                                    User clicks to post something and selects camera option
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>3. Camera snapshot</h3>
+                                <p>
+                                    System opens a camera screen that allows user to capture image directly.
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>4. Shot</h3>
+                                <p>
+                                    User capture a photo
+                                </p>
+                            </li>
+                            <li class="step">
+                                <h3>5. Upload state</h3>
+                                <p>
+                                    System provides upload state for captured photo
+                                </p>
+                            </li>
+                            <li class="step">
+                                <h3>6. Confirm state</h3>
+                                <p>
+                                    System shown photo post, where user can see how their photo looks in feed after publishing it.
+                                </p>
+                            </li>
+                            <li class="step">
+                                <h3>7. Add a message | Optional</h3>
+                                <p>
+                                    Additionally user can enter a message or title of the photo in the same way they add a short post in <a href="#scenario1">Scenario #1</a>
+                                </p>
+                            </li>
+                            <li class="step reward">
+                                <h3>8. Photo published</h3>
+                                <p>
+                                    New photo is showed highlighted in user's feed. <br>
+                                    Photo appears on users follower's feed.
+                                </p>
+                                <h3 class="message">8.1. Notification for mentioned users</h3>
+                                <p>Users who were tagged in post receive a nitification</p>
+                            </li>
+                        </ul>
+
+ 
+                        <h2 id="scenario3">#3 Upload a photo</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>The scenario begins when a user opens the app/site with intension to post a public photo.</p>
+                            </li>
+                            <li class="step investment">
+                                <h3>2. Click through</h3>
+                                <p>
+                                    User clicks to post something and selects upload photo option
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>3. File selector</h3>
+                                <p>
+                                    Systm opens file selector, where user can select a particular photo to upload.
+                                </p>
+                            </li>
+
+                            <li class="step">
+                                <h3>4. Upload...</h3>
+                                <p>From this point scenario continues as <a href="#scenatio2">Scenario #2</a></p>
+                            </li>
+                        </ul>
+
+
+                        <h2 id="scenario4">#4 Create a discussion</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>
+                                    The scenario begins when a user opens the app/site with intension to 
+                                    create a discussion thread. <br>
+                                    This scenario uses same steps as in <a href="#scenario1">Scenario #1</a>, just with different type of message.
+                                </p>
+                            </li>
+                        </ul>
+
+
+                        <h2 id="scenario5">#5 A long post</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>The scenario begins when a user opens the app/site with intension to post a SERIOUS public message with long content.</p>
+                            </li>
+                            <li class="step investment">
+                                <h3>2. Click through</h3>
+                                <p>
+                                    User clicks to post something on their mind
+                                </p>
+                            </li>
+                            <li class="step">
+                                <h3>3. Swithhing posting mode</h3>
+                                <p>
+                                    User click to swithc editor tu rich text/markdown
+                                </p>
+                            </li>
+                            <li class="step">
+                                <h3>4. Entering a post message</h3>
+                                <p>
+                                    Here system provides a different editor to enter a content. <br>
+                                    This editor should allow at least basic rich text functions and/or support markdown
+                                </p>
+                            </li>
+                            <li class="step reward">
+                                <h3>5. Post published</h3>
+                                <p>From this point scenario continues as <a href="#scenatio1">Scenario #1</a></p>
+                            </li>
+                        </ul>
+
+
+                        <h2 id="scenario6">#6 Delete</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Focus on the post</h3>
+                                <p>
+                                    Scenario begins when user views his own post (Only text based content).
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>2. Click through</h3>
+                                <p>
+                                    User clicks to delete a post.
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>3. Delete prompt</h3>
+                                <p>
+                                    System shows a delete prompt if user really wants to remove the particular post.
+                                </p>
+                            </li>
+                            <li class="step reward">
+                                <h3>4. Post deleted</h3>
+                                <p>
+                                    A success message is shown in the feed, instead of deleted post.
+                                </p>
+                            </li>
+                        </ul>
+
+                        
+                        <h2 id="scenario7">#7 Edit</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Focus on the post</h3>
+                                <p>
+                                    Scenario begins when user views his own post (Only text based content).
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>2. Click through</h3>
+                                <p>
+                                    User clicks to edit a post.
+                                </p>
+                            </li>
+                            <li class="step">
+                                <h3>3. Edit form</h3>
+                                <p>
+                                    System provides an edit form to modify a context
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>4. Editing a text</h3>
+                                <p>
+                                    User emakes corrections to text content
+                                </p>
+                            </li>
+                            <li class="step reward">
+                                <h3>5. Save the changes</h3>
+                                <p>
+                                    New modified post is showed highlighted in the feed.
+                                </p>
+                            </li>
+                        </ul>
+
+                    <footer>
+                        <a href="http://dopamineux.com">
+                            <img class="logo" src="images/logo_invert.png" alt="Dopamine UX">
+                        </a>
+                    </footer>
+
+                </div>
+            </div>
+
+        </div>
+
+
+	</main>
+
+    <script src="bower_components/jquery/dist/jquery.min.js?v=1.0"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js?v=1.0"></script>
+
+    <script src="js/main.js?v=1.0.10"></script>
+
+    <script type="text/template" id="nav-link">
+    <li>
+        <a href="{0}">{1}</a>
+    </li>
+    </script>
+
+</body>
+
+</html>

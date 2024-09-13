@@ -1,0 +1,69 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title ng-bind="pageTitle">Muzli | Demo newsfeed</title>
+
+    <base href="/dogos/" />
+
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,100&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- injector:bower-css -->
+    <link rel="stylesheet" href="bower_components/bootstrap-css/css/bootstrap.min.css?v=1.0">
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css?v=1.0">
+    <!-- endinjector -->
+
+    <!-- injector:css -->
+    <link rel="stylesheet" href="css/main.min.css?v=1.0.1">
+    <!-- endinjector -->
+</head>
+
+<body>
+
+    <main ui-view autoscroll="false"></main>
+    
+    <!-- injector:bower-js -->
+    <script src="bower_components/modernizr/modernizr.js?v=1.0"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js?v=1.0"></script>
+    <script src="bower_components/angular/angular.min.js?v=1.0"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js?v=1.0"></script>
+    <script src="bower_components/bootstrap-css/js/bootstrap.min.js?v=1.0"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js?v=1.0"></script>
+    <script src="bower_components/angular-websocket/dist/angular-websocket.min.js?v=1.0"></script>
+    <!-- endinjector -->
+
+    <!-- injector:js -->
+    <script src="compiled/js/main.min.js?v=1.0.1"></script>
+    <script src="compiled/js/services.min.js?v=1.0.1"></script>
+    <script src="compiled/js/controllers.min.js?v=1.0.1"></script>
+    <script src="compiled/js/directives.min.js?v=1.0.1"></script>
+    <script src="compiled/js/filters.min.js?v=1.0.1"></script>
+    <!-- endinjector -->
+
+    <!-- injector:trackers -->
+    <script>
+    // Google analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    //Intercom
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;
+    s.src='https://widget.intercom.io/widget/';
+    var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script>
+    <!-- endinjector -->
+
+</body>
+
+</html>

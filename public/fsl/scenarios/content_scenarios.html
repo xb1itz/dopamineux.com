@@ -1,0 +1,643 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dopamine User Experience Design</title>
+
+    <link rel="icon" type="images/png" href="images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- injector:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css?v=1.0.0">
+    <link rel="stylesheet" href="css/main.css?v=1.0.0">
+    <!-- endinjector -->
+</head>
+
+<body>
+	
+	<main id="st-container" class="st-container">
+
+        <div class="menu">
+            <button class="menu-toggle" data-effect="st-effect-4"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button> 
+        </div>
+        
+        <nav class="st-menu st-effect-4" id="menu-4">
+            
+            <h2>Scenarios:</h2>
+            <ul id="nav-links" class="nav-links"></ul>
+
+            <div class="logo"><img src="images/logo.png" alt="Dopamine UX"></div>
+        </nav>
+        
+        <div class="st-pusher">
+
+            <div class="st-content">
+                <div class="st-content-inner">
+
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="main">FSL scenarios</h1>
+                                <p>
+                                    Scenarios describe the stories and context behind why a specific user or user group comes to your site. <br>
+                                    They note the goals and questions to be achieved and define the steps of how the users can achieve them on the site.
+                                </p>
+                                <p>
+                                    Scenarios are critical both for designing an interface and for usability testing. <br>
+                                    They do not describe the details and components of site UI. However the prototype that follows will be highly based on them. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <h2>Personas</h2>
+                        <p>Persona is a standardized user that represents a customer segment. They help us to understand the people we are designing for. We define personas according to information we collected about your business and tailor scenarios to target personas' needs and goals.</p>
+
+                        <div class="row personas">
+
+                            <div class="col-md-6 persona">
+
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <img src="images/persona_michael.jpg" alt="Persona">
+                                    </div>
+                                    <div class="col-md-8 col-m">
+                                        <h3>Michael</h3>
+                                        
+                                        <p>
+                                            Business executive <br>
+                                            29 years old | Married | Higher income  
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-4">
+                                        <strong>Behavior</strong>
+                                        <p>
+                                            Plans a business vacation for his team <br>
+                                            Looks all information online and asks recommendations
+                                        </p>
+
+                                        <strong>Needs & goals</strong>
+                                        <p>
+                                            To find a business vacation for his team<br>
+                                            Needs all vacation details in one place<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 persona">
+
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <img src="images/persona_james.jpg" alt="Persona">
+                                    </div>
+                                    <div class="col-md-8 col-m">
+                                        <h3>James</h3>
+                                        
+                                        <p>
+                                            Fisherman<br>
+                                            48 years old | Married | Medium income  
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-4">
+                                        <strong>Behavior</strong>
+                                        <p>
+                                            Organizes fishing trips with his friends every year <br>
+                                            Is loyal to his favorite places 
+                                        </p>
+
+                                        <strong>Needs & goals</strong>
+                                        <p>
+                                            Book all rentals in advance<br>
+                                            Find fishing trip opportunities<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 persona">
+
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <img src="images/persona_rose.jpg" alt="Persona">
+                                    </div>
+                                    <div class="col-md-8 col-m">
+                                        <h3>Rose</h3>
+                                        
+                                        <p>
+                                            Cruise ship passenger <br>
+                                            32 years old | Married | Medium income  
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-4">
+                                        <strong>Behavior</strong>
+                                        <p>
+                                            Planning a cruise trip with her husband <br>
+                                            Asking friends and trip organizers for on-shore attractions and entertainments during their trip
+                                        </p>
+
+                                        <strong>Needs & goals</strong>
+                                        <p>
+                                            To find something to do on-shore<br>
+                                            Get accommodation and transportation<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 persona">
+
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <img src="images/persona_bjorn.jpg" alt="Persona">
+                                    </div>
+                                    <div class="col-md-8 col-m">
+                                        <h3>Bjorn</h3>
+                                        
+                                        <p>
+                                            Young father <br>
+                                            29 years old | Married | Higher income  
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-4">
+                                        <strong>Behavior</strong>
+                                        <p>
+                                            Travels by road with his family <br>
+                                            Planning a road trip around Baltic sea
+                                            Owns a camper
+                                        </p>
+
+                                        <strong>Needs & goals</strong>
+                                        <p>
+                                            To find temporaty attractions and entertainments on his road<br>
+                                            Needs a camping site<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row legend">
+                            <div class="col-md-12">
+                                <h2>Legend</h2>
+                                <p>
+                                    Each scenario represents a particular business case. What steps users take to interact with the system to complete their goals.<br>
+                                    Some of the steps have additional indicators that are explained below:
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li class="trigger">
+                                        <h3>A trigger</h3>
+                                        <p>Represents a point or event where users are being engaged into the scenario.</p>
+                                    </li>
+                                    <li class="investment">
+                                        <h3>Investment</h3>
+                                        <p>A step where a user has to spend mental effort to proceed to further steps of the scenario. This is usually the most challenging moment in the scenario.</p>
+                                    </li>
+                                    <li class="timeout">
+                                        <h3>AFK timeout</h3>
+                                        <p>Away From Keyword moment that represents a temporary break in the scenario, where users are not actively engaged in a system.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li class="notification">
+                                        <h3>Notification</h3>
+                                        <p>Represents an automatic notification that engages user outside of a system.</p>
+                                    </li>
+                                    <li class="reward">
+                                        <h3>The reward</h3>
+                                        <p>A motivator that rewards user for completing whole (or a part of) scenario.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h1>Onboarding scenarios</h1>
+                        <p>These are scenarios designed to hook a new FSL user by providing them perceptive value as soon as possible. The challenge here is to present FSL as new platform that will be used by every football fan.</p>
+
+                        <h2 id="scenario1">New visitor</h2>
+                        <h2 id="scenario1">Invite from friend</h2>
+                        <h2 id="scenario1">Link from social media</h2>
+                        <h2 id="scenario1">SEO based acquisition</h2>
+                        <h2 id="scenario1">GAME based acquisition (same as social???)</h2>
+
+
+
+                        <h2 id="scenario1">OT: Scroll content stops?</h2>
+
+                        
+                        <h1>Content consumption based scenarios</h1>
+                        <p>These scenarios are centered around users who consume footbal related content online and are actively engaged in news and social media.</p>
+                        
+                        <h2 id="scenario1">What's new</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. User hits landing page</h3>
+                                <p>The scenario begins when a user visits nordicsafari.no home page</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>2. User gets hooked on adventures</h3>
+                                <p>System displays quality visual content about top safaris and adventures</p>
+                            </li> 
+                            <li class="step">
+                                <h3>3. User clicks through</h3>
+                                <p>User clicks through to a page where he see all the information about particular adventure</p>
+                            </li> 
+                            <li class="step">
+                                <h3>4. The system displays adventure content</h3>
+                                <p>
+                                    System displays all information regarding selected adventure. <br>
+                                    This includes: <br> 
+                                    <ul>
+                                        <li>Adventure value proposition</li>
+                                        <li>Adventure photos</li>
+                                        <li>Pricing</li>
+                                        <li>Adventure preparation information</li>
+                                        <li>Call to action to subscribe for exclusive offers</li>
+                                    </ul>
+                                </p>
+                            </li> 
+                            <li class="step investment">
+                                <h3>5. User enters email address</h3>
+                                <p>Enters his email address into subscription form to get exclusive offers</p>
+                            </li>
+                            <li class="step reward">
+                                <h3>6.1. A reward message is shown</h3>
+                                <p>The system displays a motivational message that user is now credible for exclusive deals.</p>
+                                <h3 class="message">6.2. A welcome letter is sent</h3>
+                                <p>The system sends a welcome letter with few pre-ready offers.</p>
+                            </li> 
+                        </ul>
+
+                        <h2 id="scenario2">#2 Traffic to particular adventure</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. User hits adventure page</h3>
+                                <p>Scenario begins when user comes to particular adventure from <span>Google</span> or other search engines</p>
+                            </li>
+                            <li class="step">
+                                <h3>2. System displays adventure content</h3>
+                                <p>
+                                    The system displays all information regarding selected adventure. Same as in <a href="#scenario1">Scenario #1</a>.
+                                </p>
+                            </li> 
+                            <li class="step investment">
+                                <h3>3. User enters email address</h3>
+                                <p>Enters his email address into subscription form to get exclusive offers</p>
+                            </li>
+                            <li class="step reward">
+                                <h3>4.1. A reward message is shown</h3>
+                                <p>The system displays motivational a message that user is now credible for exclusive deals.</p>
+                                <h3 class="message">4.2. A welcome letter is sent</h3>
+                                <p>The system sends a welcome letter with few pre-ready offers.</p>
+                            </li> 
+                        </ul>
+
+                        <h2 id="scenario3">#3 Cross offers</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. User hits adventure page</h3>
+                                <p>Scenario begins when user comes to particular adventure</p>
+                            </li>
+                            <li class="step">
+                                <h3>2. User scan through all content</h3>
+                                <p>User skips content and is not engaged</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>3. System displays related adventures</h3>
+                                <p>
+                                    The system shows another adventure from the same category.
+                                </p>
+                            </li> 
+                            <li class="step">
+                                <h3>4. User clicks through</h3>
+                                <p>User clicks through to page where he see all the information about particular adventure</p>
+                            </li> 
+                            <li class="step">
+                                <h3 class="link">5. Link to scenario #2</h3>
+                                <p>Scenario continues the same as <a href="#scenario2">Scenario #2</a></p>
+                            </li> 
+                        </ul>
+
+                        <h2 id="scenario4">#4 Blog traffic</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. User hits blog article</h3>
+                                <p>Scenario begins when user comes to read blog or news article</p>
+                            </li>
+                            <li class="step reward">
+                                <h3>2. User reads content</h3>
+                                <p>The user reads a blog article that should motivate him about the adventures.</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>3. System displays visual trigger</h3>
+                                <p>
+                                    System shows photos of related adventure to motivate user to click
+                                </p>
+                            </li> 
+                            <li class="step">
+                                <h3>4. User clicks through</h3>
+                                <p>User clicks through to page where he see all the information about particular adventure</p>
+                            </li> 
+                            <li class="step">
+                                <h3 class="link">5. Link to scenario #2</h3>
+                                <p>Scenario continues the same as <a href="#scenario2">Scenario #2</a></p>
+                            </li> 
+                        </ul>
+
+                        <h2 id="scenario5">#5 Blog subscription</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. User hits blog article</h3>
+                                <p>Scenario begins when user comes to read blog or news article</p>
+                            </li>
+                            <li class="step reward">
+                                <h3>2. User reads content</h3>
+                                <p>The user reads a blog article that should motivate him about the adventures.</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>3. System displays subscription form</h3>
+                                <p>System provides call to action to subscribe more related articles and get exclusive offers</p>
+                            </li> 
+                            <li class="step investment">
+                                <h3>3. User enters email address</h3>
+                                <p>Enters his email address into subscription form to get exclusive offers</p>
+                            </li>
+                            <li class="step reward">
+                                <h3>4.1. A reward message is shown</h3>
+                                <p>The system displays a motivational message that user is now credible for exclusive deals.</p>
+                                <h3 class="message">4.2. A welcome letter is sent</h3>
+                                <p>The system sends a welcome letter with few pre-ready offers.</p>
+                            </li> 
+                        </ul>
+
+                        <h2 id="scenario6">#6 Contact advice</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. User hits contact page</h3>
+                                <p>Scenario begins when user visits contact page</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>2. System displays contact form</h3>
+                                <p>The system provides a call to action to message nordicsafari.no to help to plan an adventure.</p>
+                            </li> 
+                            <li class="step investment">
+                                <h3>3. User submits a contact form</h3>
+                                <p>User enters message for website administrator</p>
+                            </li>
+                            <li class="step reward">
+
+                                <h3>4.1. A reward message is shown</h3>
+                                <p>The system displays a motivational message that his message was received.</p>
+
+                                <h3 class="message">4.2. A confirmation letter is sent</h3>
+                                <p>The system sends a confirmation letter with few pre-ready offers.</p>
+                            </li> 
+                        </ul>
+
+
+
+                        <h1>Sales scenarios</h1>
+                        <p>These senarios are oriented to conversions and maximize sales opportunities.</p>
+
+                        <h2 id="scenario7">#7 Booking</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. User hits adventure page</h3>
+                                <p>Scenario begins when user comes to particular adventure</p>
+                            </li>
+                            <li class="step">
+                                <h3>2. User gets engaged</h3>
+                                <p>User reads a content and decides to book an adventure</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>3. System displays Book adventure call to action</h3>
+                                <p>
+                                    System shows high gravity call to action that leads to booking form
+                                </p>
+                            </li> 
+                            <li class="step">
+                                <h3>4. User clicks through</h3>
+                                <p>User clicks through to booking form</p>
+                            </li> 
+                            <li class="step investement">
+                                <h3>5. User submits a booking form</h3>
+                                <p>User enters all required information for booking</p>
+                            </li>
+                            <li class="step reward">
+                                <h3>6.1. A reward message is shown</h3>
+                                <p>The system displays a motivational message that user has booked a trip.</p>
+
+                                <h3 class="message">6.3. A deposit payment letter is sent</h3>
+                                <p>System sends a letter of deposit details</p>
+
+                                <h3 class="message">6.2. A confirmation letter is sent</h3>
+                                <p>System sends a confirmation letter with all the detail what he needs to prepare</p>
+                            </li> 
+                        </ul>
+
+                        <h2 id="scenario8">#8 Paying a deposit</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. User books an adventure</h3>
+                                <p>Scenario begins when user successfully books an adventure (<a href="#scenario7">Scenario #7</a>)</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>2. System displays a CTA to pay a deposit</h3>
+                                <p>System suggest to make deposit payment online right now and guarantee the place in adventure</p>
+                            </li>
+                            <li class="step">
+                                <h3>4. User clicks through</h3>
+                                <p>User clicks through to payment form</p>
+                            </li> 
+                            <li class="step investement">
+                                <h3>5. User submits a payment form</h3>
+                                <p>User enters all required information for payment</p>
+                            </li>
+                            <li class="step reward">
+                                <h3>6.1. A reward message is shown</h3>
+                                <p>System displays motivational message that users place in adventure is guaranteed</p>
+
+                                <h3 class="message">6.2. A confirmation letter is sent</h3>
+                                <p>System sends a confirmation letter about deposit and how user can redeem it</p>
+                            </li> 
+                        </ul>
+
+                        <h2 id="scenario9">#9 Adventure planning</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. User hits landing page</h3>
+                                <p>The scenario begins when a user visits nordicsafari.no home page or list of adventures</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>2. System displays CTA for trip planning</h3>
+                                <p>System provides additional trigger that redirects to adventure calendar</p>
+                            </li> 
+                            <li class="step">
+                                <h3>3. System provides viable adventure dates</h3>
+                                <p>System displays available adventures and dates that user can choose from</p>
+                            </li>
+                            <li class="step">
+                                <h3>4. User clicks through</h3>
+                                <p>User clicks through to booking form</p>
+                            </li>
+                            <li class="step">
+                                <h3 class="link">5. Link to scenario #7</h3>
+                                <p>Scenario continues the same as <a href="#scenario7">Scenario #7</a></p>
+                            </li> 
+                        </ul>
+
+                        <h2 id="scenario10">#10 Reengaging returning clients</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. User visits nordicsafari.no</h3>
+                                <p>User visits a website but does not convert and exit.</p>
+                            </li>
+                            <li class="step">
+                                <div class="timeout"></div>
+                                <h3>2. User visits nordicsafari.no again</h3>
+                                <p>User visits a website after some time, probably decided or still deciding if he should book a trip.</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>3. System displays personalized offers</h3>
+                                <p>System detects that adventures user visited before and automatically suggest exclusive offer and call to action to book it</p>
+                            </li> 
+                            <li class="step">
+                                <h3>4. User clicks through</h3>
+                                <p>User clicks through to booking form</p>
+                            </li>
+                            <li class="step">
+                                <h3 class="link">5. Link to scenario #7</h3>
+                                <p>Scenario continues the same as <a href="#scenario7">Scenario #7</a></p>
+                            </li> 
+                        </ul>
+
+                        <h2 id="scenario11">#11 Social proofing</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. User hits adventure page</h3>
+                                <p>Scenario begins when user comes to particular adventure</p>
+                            </li>
+                            <li class="step">
+                                <h3>2. User scan through all content</h3>
+                                <p>User skips content and is not engaged</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>3. System provides social proof of past adventures</h3>
+                                <p>The user gets engaged and motivated by past adventures of real people - real stories of other happy customers.</p>
+                            </li>
+                            <li class="step">
+                                <h3 class="link">4. Link to scenario #7 or #2</h3>
+                                <p>The scenario continues the same as <a href="#scenario7">Scenario #7</a> or <a href="#scenario2">Scenario #2</a> depending on engagement effectiveness.</p>
+                            </li> 
+                        </ul>
+
+                        <h2 id="scenario12">#12 Upselling</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Fills out a booking form</h3>
+                                <p>The scenario begins when a user is almost converted and fills out a booking form</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>2. System suggest additional services</h3>
+                                <p>Depending on adventure type, the system automatically suggests additional services, like accommodation, car rent, etc.</p>
+                            </li>
+                            <li class="step investment">
+                                <h3>3. User select additional services</h3>
+                                <p>User adds additional services to his booking request</p>
+                            </li>
+                            <li class="step">
+                                <h3 class="link">5. Link to scenario #7</h3>
+                                <p>Scenario continues the same as <a href="#scenario7">Scenario #7</a></p>
+                            </li>  
+                        </ul>
+
+                        <h2 id="scenario13">#13 Partner refferals</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. User hits a partner page</h3>
+                                <p>User visits a unique page designed exclusively for partner (e.g. <span>hurtigruten.com</span>)</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>2. System suggests personalized adventures</h3>
+                                <p>Depending on a partner, the system automatically suggests adventures and services related to that partner.</p>
+                            </li>
+                            <li class="step">
+                                <h3>3. User gets engaged</h3>
+                                <p>User reads a content and decides to book an adventure</p>
+                            </li>
+                            <li class="step">
+                                <h3 class="link">5. Link to scenario #7</h3>
+                                <p>Scenario continues the same as <a href="#scenario7">Scenario #7</a></p>
+                            </li>  
+                        </ul>
+
+                    </div>
+
+                    <footer>
+                        <a href="http://dopamineux.com">
+                            <img class="logo" src="images/logo_invert.png" alt="Dopamine UX">
+                        </a>
+                    </footer>
+
+                </div>
+            </div>
+
+        </div>
+
+
+	</main>
+
+    <script src="bower_components/jquery/dist/jquery.min.js?v=1.0"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js?v=1.0"></script>
+
+    <script src="js/main.js?v=1.0.10"></script>
+
+    <script type="text/template" id="nav-link">
+    <li>
+        <a href="{0}">{1}</a>
+    </li>
+    </script>
+
+</body>
+
+</html>

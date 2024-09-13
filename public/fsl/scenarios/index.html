@@ -1,0 +1,719 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dopamine User Experience Design</title>
+
+    <link rel="icon" type="images/png" href="images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- injector:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css?v=1.0.0">
+    <link rel="stylesheet" href="css/main.css?v=1.0.0">
+    <!-- endinjector -->
+</head>
+
+<body>
+	
+	<main id="st-container" class="st-container">
+
+        <div class="menu">
+            <button class="menu-toggle" data-effect="st-effect-4"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button> 
+        </div>
+        
+        <nav class="st-menu st-effect-4" id="menu-4">
+            
+            <h2>Categories:</h2>
+            <ul id="nav-links" class="nav-links"></ul>
+
+            <div class="logo"><img src="images/logo.png" alt="Dopamine UX"></div>
+        </nav>
+        
+        <div class="st-pusher">
+
+            <div class="st-content">
+                <div class="st-content-inner">
+
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="main">FSL scenarios</h1>
+                                <p>
+                                    Scenarios describe the stories and context behind why a specific user or user group comes to your site. <br>
+                                    They note the goals and questions to be achieved and define the steps of how the users can achieve them on the site.
+                                </p>
+                                <p>
+                                    Scenarios are critical both for designing an interface and for usability testing. <br>
+                                    They do not describe the details and components of site UI. However the prototype that follows will be highly based on them. 
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <h2>Proofing links</h2>
+
+                        <button class="btn btn-link pull-right" type="button" data-toggle="collapse" data-target="#collapseLinks" aria-expanded="false" aria-controls="collapseLinks">Toggle</button>
+
+                        <div class="row collapse in index" id="collapseLinks">
+                            <p>
+                                <ul>
+                                    <li><a href="https://paper.dropbox.com/doc/FSL-research-strategy--AMUtzEX_0CNGniUpR_XrKTP6Ag-2oKhI7I8cLc87ejyBj1HE" target="_blank">Research strategy</a></li>
+                                    <li><a href="https://paper.dropbox.com/doc/FSL-Interview-quidelines-8zUvjj0LuYVfgwbmsFOfd" target="_blank">Research interview </a></li>
+                                    <li><a href="https://goo.gl/sQrxvy" target="_blank">Survey results</a></li>
+                                    <li><a href="https://paper.dropbox.com/doc/FSL-insights--AMYI8ZmbUzeK41VBoUohUkf9Ag-SAA5ZodGNrtiUdCCH1c1j" target="_blank">Survey insights</a></li>
+                                    <li><a href="https://invis.io/W7NZFZOBV3C#/319194303_Welcome" target="_blank">Mobile prototype (Demo)</a></li>
+                                    <li><a href="personas.html">Personas</a></li>
+                                </ul>
+                            </p>
+                        </div>
+
+
+                        <h2>Scenario index</h2>
+
+                        <button class="btn btn-link pull-right" type="button" data-toggle="collapse" data-target="#collapseIndex" aria-expanded="false" aria-controls="collapseIndex">Toggle</button>
+
+                        <div class="row collapse in index" id="collapseIndex">
+
+                            <div class="col-md-12">
+                                <p>Here all possible scenarios are grouped by particular moments.
+                                <br>
+                                <br>
+                                Each scenario is tagged with <strong>confidence</strong> that reflect how likely particular scenario will be valuable for users for reaching their goals. Confidence scale is 1-5 where <conf class="inline c1"></conf> means the scenario is not likely to be valuable and <conf class="inline c5"></conf> means high return of investment.</p>
+                                <br>
+
+                            </div>
+
+                            <!-- ONBOARDING -->
+                            <div class="col-md-12 col-lg-6 category" id="category1">
+
+                                <h3>Onboarding scenarios</h3>
+                                
+                                <p>
+                                    These are scenarios designed to hook a new FSL user by providing them perceptive value as soon as possible. 
+                                    <br>
+                                    The challenge here is to present FSL as new platform that will be used by every football fan.
+                                </p>
+                                
+                                <ul>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>
+                                        <a href="scenario_onboarding.html#scenario1">Organic visitor to landing page</a>
+                                        <small>User who enters FSL landing page directly w/o any context</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>
+                                        <a href="scenario_onboarding.html#scenario2">Download funnel from Store</a>
+                                        <small>Scenario when user downoads app from store</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>
+                                        <a href="scenario_onboarding.html#scenario3">Virality trigger</a>
+                                        <small>Scenario designed to get users to infite friends to the app</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>
+                                        <a href="scenario_onboarding.html#scenario4">Invite from friend</a>
+                                        <small>User who receives a general invitation link from friend via any channel</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>
+                                        <a href="scenario_onboarding.html#scenario5">Link from social media</a>
+                                        <small>Users who see shared platform content on social media and clicks through</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c2"></conf>   
+                                        <a href="scenario_onboarding.html#scenario6">Invite to watch live score</a>
+                                        <small>User who receives an invitation to check live game feed</small>
+                                    </li>
+
+                                    <!-- Legacy scenario -->
+
+                                    <li>
+                                        <conf class="c4"></conf>
+                                        <a href="scenario_onboarding.html#scenario7">SEO based acquisition</a>
+                                        <small>Userts who find public content on search engines and clicks through</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c1"></conf>   
+                                        <a href="scenario_onboarding.html#scenario8">GAME based acquisition</a>
+                                        <small>The acquisition based on gamification factors</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>
+                                        <a href="scenario_onboarding.html#scenario9">Organic visitor with VP</a>
+                                        <small>User who enters FSL platform directly and is provided with additional value before signing up.</small>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            
+                            <!-- DAILY -->
+                            <div class="col-md-12 col-lg-6 category" id="category2">
+
+                                <h3>Daily routine</h3>
+                                
+                                <p>
+                                    These scenarios oriented to bring causal rewards to users who are looking for information to digest or interct with community.
+                                </p>
+                                
+                                <ul>
+                                    <li>
+                                        <conf class="c5"></conf>    
+                                        <mvp></mvp>
+                                        <a href="scenario_daily.html#scenario1">Team oriented news feed</a>
+                                        <small>Basic use case for users checking what’s new on their team</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>
+                                        <a href="scenario_daily.html#scenario2">League oriented news feed (global news)</a>
+                                        <small>Use case for users who want to check more football realated conent</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c4"></conf>
+                                        <mvp></mvp> 
+                                        <a href="scenario_daily.html#scenario3">Game history</a>
+                                        <small>Checking scores and results of previous games</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c4"></conf>   
+                                        <a href="scenario_daily.html#scenario4">Special events</a>
+                                        <small>Checking special team events (transfers, management changes)</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>  
+                                        <a href="scenario_daily.html#scenario5">Reading a comments</a>
+                                        <small>Checking comments/reactions on particular content piece</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>   
+                                        <a href="scenario_daily.html#scenario6">Reading reactions to own content</a>
+                                        <small>Checking comments/reactions on users own recent post</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp> 
+                                        <a href="scenario_daily.html#scenario7">Commenting</a>
+                                        <small>Posting a comment/reaction to certain content piece</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>
+                                        <a href="scenario_daily.html#scenario8">Posting a reply</a>
+                                        <small>Replying to other users comment/reaction</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>
+                                        <a href="scenario_daily.html#scenario9">React or reply to own content</a>
+                                        <small>Posting additional comment/reaction to own content</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>   
+                                        <mvp></mvp>
+                                        <a href="scenario_daily.html#scenario10">Share on SFL</a>
+                                        <small>Sharing content piece on FSL</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>
+                                        <a href="scenario_daily.html#scenario11">Share on socials</a>
+                                        <small>Sharing content piece on Socials</small>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            
+                            <!-- CREATING -->
+                            <div class="col-md-12 col-lg-6 category" id="category3">
+
+                                <h3>Content creation</h3>
+                                
+                                <p>
+                                    Scenarios enabling users to generate FSL content based upon various intentions.
+                                </p>
+
+                                
+                                <ul>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>
+                                        <a href="scenario_creation.html#scenario1">Short post</a>
+                                        <small>Creating a short post just to spread a message</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c4"></conf>   
+                                        <a href="scenario_creation.html#scenario2">Capture a photo</a>
+                                        <small>Capture a photo/selfie of fans furin IRL event</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>   
+                                        <a href="scenario_creation.html#scenario3">Upload a photo</a>
+                                        <small>Uplaod older photo/selfie or any other image as a piece of content</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c4"></conf>   
+                                        <a href="scenario_creation.html#scenario4">Create a discussion</a>
+                                        <small>Creating a post to attract other users rection</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c2"></conf>   
+                                        <a href="scenario_creation.html#scenario5">A long post</a>
+                                        <small>Creating profesionally looking, longer piece of content</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>   
+                                        <a href="scenario_creation.html#scenario6">Delete</a>
+                                        <small>Removing own piece of content entirely</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>   
+                                        <a href="scenario_creation.html#scenario7">Edit</a>
+                                        <small>Editing own piece of content (only text based)</small>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            
+                            <!-- SOCIAL -->
+                            <div class="col-md-12 col-lg-6 category" id="category4">
+
+                                <h3>Social scenarios</h3>
+                                
+                                <p>
+                                    These scenarios based on social features of FSL, allowing fans to connect and keep track of each other.
+                                </p>
+                                
+                                <ul>
+                                    <li>
+                                        <conf class="c4"></conf>    
+                                        <mvp></mvp>   
+                                        <a href="scenario_social.html#scenario1">Public user's feed</a>
+                                        <small>Checking what people user follows shared</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>   
+                                        <a href="scenario_social.html#scenario2">Following a user</a>
+                                        <small>Starting to follow a user</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>   
+                                        <a href="scenario_social.html#scenario3">Unfollowing a user</a>
+                                        <small>Removing follower user</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>   
+                                        <a href="scenario_social.html#scenario4">Send message</a>
+                                        <small>Sending an IM to another user</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>   
+                                        <a href="scenario_social.html#scenario5">Receive message</a>
+                                        <small>Receiving an IM to personal inbox</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>   
+                                        <a href="scenario_social.html#scenario6">Read all messages</a>
+                                        <small>Reading entire inbox of messages</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>   
+                                        <a href="scenario_social.html#scenario7">New messages</a>
+                                        <small>Checking unread messages</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>   
+                                        <a href="scenario_social.html#scenario8">Archive message</a>
+                                        <small>Archiving unnecesary or old messages</small>
+                                    </li>
+                                </ul>
+                            </div>
+
+                                
+                            <!-- EVENTS -->
+                            <div class="col-md-12 col-lg-6 category" id="category5">
+
+                                <h3>Special events</h3>
+                                
+                                <p>
+                                    Scenarios related to special events happening within user's team
+                                </p>
+
+                                
+                                <ul>
+                                    <li>
+                                        <conf class="c3"></conf>    
+                                        <a href="scenario_events.html#scenario1">Special event</a>
+                                        <small>New management event announced</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>    
+                                        <a href="scenario_events.html#scenario2">New player</a>
+                                        <small>New acquisition of player announced</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>    
+                                        <a href="scenario_events.html#scenario3">New transfer of player</a>
+                                        <small>New transfer happened</small>
+                                    </li>
+     
+                                </ul>
+                            </div>
+
+
+                            <!-- PRE GAME -->
+                            <div class="col-md-12 col-lg-6 category" id="category5">
+
+                                <h3>PRE Match</h3>
+                                
+                                <p>
+                                    Scenarios targeting users before particular match starts.
+                                </p>
+
+                                
+                                <ul>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>    
+                                        <a href="scenario_pre.html#scenario1">Upcoming matches</a>
+                                        <small>Checking all upcomig matches</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>    
+                                        <a href="scenario_pre.html#scenario2">Match details</a>
+                                        <small>Looking for game details and information on it (time, venue, stats)</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c2"></conf>    
+                                        <a href="scenario_pre.html#scenario3">Tickets</a>
+                                        <small>Looking tickets to particular game</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>    
+                                        <a href="scenario_pre.html#scenario4">Predictor</a>
+                                        <small>Posting a score prediction</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c2"></conf>    
+                                        <a href="scenario_pre.html#scenario5">Friend's predictions</a>
+                                        <small>Checking predictions of friends and followed people for the same game</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c2"></conf>    
+                                        <a href="scenario_pre.html#scenario6">Other predictions</a>
+                                        <small>Checking predictions of other fans for the same game</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c2"></conf>    
+                                        <a href="scenario_pre.html#scenario7">Predictions and tactics</a>
+                                        <small>Checking free content of other users on particular game</small>
+                                    </li>
+     
+                                </ul>
+                            </div>
+
+
+                            <!-- PRE GAME ADVANCED -->
+                            <div class="col-md-12 col-lg-6 category" id="category6">
+
+                                <h3>Advanced PRE Match</h3>
+                                
+                                <p>
+                                    Scenarios targeting users before particular match starts with additional gamification. <br>
+                                    Note that all these scenarios are subject for experiments due to need for balancing of gamification factors.
+                                </p>
+
+                                
+                                <ul>
+                                    <li>
+                                        <conf class="c3"></conf>    
+                                        <a href="scenario_pre_advanced.html#scenario1">Create a challenge</a>
+                                        <small>Creating a challenge based on prevoiusly posted prediction</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c2"></conf>    
+                                        <a href="scenario_pre_advanced.html#scenario2">Share challenge</a>
+                                        <small>Sharing created challenge publically via available share channels</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c2"></conf>    
+                                        <a href="scenario_pre_advanced.html#scenario3">Inviting friends challenge</a>
+                                        <small>Inviting FSL friends to acceps created challenge</small>
+                                    </li>
+
+                                    <li>
+                                        <conf class="c1"></conf>    
+                                        <a href="scenario_pre_advanced.html#scenario4">Starting XI</a>
+                                        <small>Posting starting layout or tactics</small>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <!-- IN GAME -->
+                            <div class="col-md-12 col-lg-6 category" id="category7">
+
+                                <h3>Match time scenarios</h3>
+                                
+                                <p>
+                                    Scenarios happenig during a match.
+                                </p>
+
+                                
+                                <ul>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>    
+                                        <a href="scenario_match.html#scenario1">Live score</a>
+                                        <small>Checking a live score of the match</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>    
+                                        <a href="scenario_match.html#scenario2">Live broadcast (if possible)</a>
+                                        <small>Watching a live brodcast of the game</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>    
+                                        <a href="scenario_match.html#scenario3">Match events</a>
+                                        <small>Checking a special match events (goals, cards, subs)</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>    
+                                        <a href="scenario_match.html#scenario4">Live reactions</a>
+                                        <small>Checking live reaction of other FSL users</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>    
+                                        <a href="scenario_match.html#scenario5">React</a>
+                                        <small>Post a rection/comment in the context of the match</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>    
+                                        <a href="scenario_match.html#scenario6">Invite friends</a>
+                                        <small>Inviting friends to watch a live score</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>    
+                                        <a href="scenario_match.html#scenario7">Share a moment</a>
+                                        <small>Sharing a special moment of the game (goals, cards, subs) via available share channels</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>    
+                                        <a href="scenario_match.html#scenario8">Share a current result</a>
+                                        <small>Sharing current score of the game via available share channels</small>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                            <!-- IN GAME IRL -->
+                            <div class="col-md-12 col-lg-6 category" id="category8">
+
+                                <h3>Match time scenarios IRL</h3>
+                                
+                                <p>
+                                    Scenarios happenig during a match, watching it in real life.
+                                </p>
+
+
+                                <ul>
+                                    <li>
+                                        <conf class="c3"></conf>    
+                                        <a href="scenario_match_irl.html#scenario1">Selfie</a>
+                                        <small>Adding a photo/selfie with geotag</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c1"></conf>    
+                                        <a href="scenario_match_irl.html#scenario2">Invite</a>
+                                        <small>Inviting other fans to watch match IRL</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c1"></conf>    
+                                        <a href="scenario_match_irl.html#scenario3">Event/radar</a>
+                                        <small>Creating an IRL watch event publicly accessible to everyone</small>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <!-- POST GAME -->
+                            <div class="col-md-12 col-lg-6 category" id="category9">
+
+                                <h3>POST Match</h3>
+                                
+                                <p>
+                                    Scenarios targeting users after particular match ends.
+                                </p>
+
+                                
+                                <ul>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>    
+                                        <a href="scenario_post.html#scenario1">Check score</a>
+                                        <small>Checking a score of ended match</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c4"></conf>
+                                        <mvp></mvp>    
+                                        <a href="scenario_post.html#scenario2">Check reactions</a>
+                                        <small>Checking reactions of other fans after match ended</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>    
+                                        <a href="scenario_post.html#scenario3">Key moments</a>
+                                        <small>Checking a key moments of the match</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>    
+                                        <a href="scenario_post.html#scenario4">Reaction</a>
+                                        <small>Post a public post about the match</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c2"></conf>    
+                                        <a href="scenario_post.html#scenario5">Rate</a>
+                                        <small>Post a detailed rating for team players for particular match</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>    
+                                        <a href="scenario_post.html#scenario6">Share score</a>
+                                        <small>Sharing match score via available share channels</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c3"></conf>    
+                                        <a href="scenario_post.html#scenario7">Sharing reaction</a>
+                                        <small>Sharing a positive or negative reaction about match publicly</small>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <!-- POST GAME ADVANCED -->
+                            <div class="col-md-12 col-lg-6 category" id="category10">
+
+                                <h3>Advanced POST Match</h3>
+                                
+                                <p>
+                                    Scenarios targeting users after particular match ended with additional gamification. <br>
+                                    Note that all these scenarios are subject for experiments due to need for balancing of gamification factors.
+                                </p>
+
+                                
+                                <ul>
+                                    <li>
+                                        <conf class="c2"></conf>    
+                                        <a href="scenario_post_advanced.html#scenario1">Prediction reward</a>
+                                        <small>Receiving elevation for correct predictions</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c1"></conf>    
+                                        <a href="scenario_post_advanced.html#scenario2">Starting XI reward</a>
+                                        <small>Receiving elevation for correct for layout/tactics</small>
+                                    </li>
+                                </ul>
+                            </div>
+
+                                    
+                            <!-- ABUSE -->
+                            <div class="col-md-12 col-lg-6 category" id="category11">
+
+                                <h3>Abuse Moderation</h3>
+                                
+                                <p>
+                                    Since many of respondents complained that other fans can be toxic or abusive, we need to implement mechanisms to remove such users.
+                                </p>
+
+                             
+                                <ul>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>    
+                                        <a href="scenario_abuse.html#scenario1">Report another user</a>
+                                        <small>Reporting nother user profile as abusive</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c5"></conf>
+                                        <mvp></mvp>    
+                                        <a href="scenario_abuse.html#scenario2">Report content</a>
+                                        <small>Reporting particular piece of content as abusive</small>
+                                    </li>
+                                    <li>
+                                        <conf class="c4"></conf>    
+                                        <a href="scenario_abuse.html#scenario3">Report comment/reaction</a>
+                                        <small>Reporting comment/reaction as abusive</small>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <!-- FANTASY -->
+                            <div class="col-md-12 col-lg-6 category" id="category12">
+
+                                <h3>Fantasy</h3>
+                                
+                                <p>
+                                    Needs to be decided if is required in MVP.
+                                    Also designing fantasy intergated to FSL may require another design cycle.  
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+                    <footer>
+                        <a href="http://dopamineux.com">
+                            <img class="logo" src="images/logo_invert.png" alt="Dopamine UX">
+                        </a>
+                    </footer>
+
+                </div>
+            </div>
+
+        </div>
+
+
+	</main>
+
+    <script src="bower_components/jquery/dist/jquery.min.js?v=1.0"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js?v=1.0"></script>
+
+    <script src="js/main.js?v=1.0.10"></script>
+
+    <script type="text/template" id="nav-link">
+    <li>
+        <a href="{0}">{1}</a>
+    </li>
+    </script>
+
+</body>
+
+</html>

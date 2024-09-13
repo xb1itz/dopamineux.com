@@ -1,0 +1,102 @@
+body {
+    color: #555;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    overflow-y: scroll;
+    -ms-overflow-style: scrollbar;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    * {
+        font-family: 'Open Sans', sans-serif;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    input, button, select, textarea {
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+
+/*===================================
+=            Main styles            =
+===================================*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+
+    h1, h2, h3, h4 {
+      font-weight: 400;
+      color: #000;
+    }
+
+    h1 {
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin: 50px 0px 12px 10px;
+        border-top: 1px solid #ccc;
+        padding-top: 50px;
+    }
+
+    main {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    footer {
+        img {
+            float: right;
+            width: 150px;
+            margin-right: 25px;
+        }
+    }
+
+}
+
+
+
+/*=====================================
+=            Media queries            =
+=====================================*/
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    } 
+}
+
+
+
+/*==================================
+=            Animations            =
+==================================*/
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+

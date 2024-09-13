@@ -1,0 +1,49 @@
+body {
+  color: #FFF;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'PT Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+  overflow-y: scroll;
+  -ms-overflow-style: scrollbar;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body * {
+  font-family: 'PT Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body input,
+body button,
+body select,
+body textarea {
+  font-family: 'PT Sans', sans-serif;
+}
+/*===================================
+=            Main styles            =
+===================================*/
+.markdown-body {
+  font-family: 'PT Sans', sans-serif;
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 45px;
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 400;
+  color: #e21885;
+}
+.markdown-body ul + ol {
+  margin-left: 30px;
+}
+footer img {
+  float: right;
+  width: 150px;
+  margin-right: 25px;
+}

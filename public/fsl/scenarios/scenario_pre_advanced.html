@@ -1,0 +1,259 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dopamine User Experience Design</title>
+
+    <link rel="icon" type="images/png" href="images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- injector:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css?v=1.0.0">
+    <link rel="stylesheet" href="css/main.css?v=1.0.0">
+    <!-- endinjector -->
+</head>
+
+<body>
+    
+    <main id="st-container" class="st-container">
+
+        <div class="menu">
+            <button class="menu-toggle" data-effect="st-effect-4"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button> 
+            <button class="menu-toggle back"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></button> 
+        </div>
+        
+        <nav class="st-menu st-effect-4" id="menu-4">
+            
+            <h2>Scenarios:</h2>
+            <ul id="nav-links" class="nav-links"></ul>
+
+            <div class="logo"><img src="images/logo.png" alt="Dopamine UX"></div>
+        </nav>
+        
+        <div class="st-pusher">
+
+            <div class="st-content">
+                <div class="st-content-inner">
+
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="main">Advanced PRE Match scenarios</h1>
+                                <p>
+                                    Scenarios targeting users before particular match starts with additional gamification. <br>
+                                    Note that all these scenarios are subject for experiments due to need for balancing of gamification factors.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <h2>Legend</h2>
+                        <button class="btn btn-link pull-right" type="button" data-toggle="collapse" data-target="#collapseLegend" aria-expanded="false" aria-controls="collapseLegend">Toggle</button>
+
+                        <div class="row collapse in legend" id="collapseLegend">
+                            <div class="col-md-12">
+                                <p>
+                                    Each scenario represents a particular business case. What steps users take to interact with the system to complete their goals.<br>
+                                    Some of the steps have additional indicators that are explained below:
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li class="trigger">
+                                        <h3>A trigger</h3>
+                                        <p>Represents a point or event where users are being engaged into the scenario.</p>
+                                    </li>
+                                    <li class="investment">
+                                        <h3>Investment</h3>
+                                        <p>A step where a user has to spend mental effort to proceed to further steps of the scenario. This is usually the most challenging moment in the scenario.</p>
+                                    </li>
+                                    <li class="timeout">
+                                        <h3>AFK timeout</h3>
+                                        <p>Away From Keyword moment that represents a temporary break in the scenario, where users are not actively engaged in a system.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li class="notification">
+                                        <h3>Notification</h3>
+                                        <p>Represents an automatic notification that engages user outside of a system.</p>
+                                    </li>
+                                    <li class="reward">
+                                        <h3>The reward</h3>
+                                        <p>A motivator that rewards user for completing whole (or a part of) scenario.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                        <h2 id="scenario1">#1 Create a challenge</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>User just made a pfediction</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>2. Challenge CTA</h3>
+                                <p>
+                                    System displays a CTA for challenging a friend
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>3. Click through</h3>
+                                <p>
+                                    User click's through to open challenge screen
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>4. Challenge screen</h3>
+                                <p>
+                                    System displays an option to invite friends to make same prediction as user just did.
+                                    <ul>
+                                        <li>Select friend from follower list</li>
+                                        <li>Enter username</li>
+                                        <li>Enter email</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li class="step">
+                                <h3>5. Send invitation</h3>
+                                <p>
+                                    User select a list of friends who they weant to invite and sends invitations.
+                                </p>
+                            </li>
+                            <li class="step reward">
+                                <h3>5. Success message</h3>
+                                <p>
+                                    A success message is displayed.
+                                </p>
+                                <h3 class="message">5.1. Notification</h3>
+                                <p>
+                                    A notification is send to each invited friend registeded in the system.
+                                </p>
+                                <h3 class="message">5.2. Invitation email</h3>
+                                <p>
+                                    If user with specified email is not registered, invitation is sent via email.
+                                </p>
+                            </li>
+                        </ul>
+                        
+
+                        <h2 id="scenario2">#2 Share challenge</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>User just made a pfediction</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>2. Share a challenge CTA</h3>
+                                <p>
+                                    System displays a CTA to share a prediction on social networks and challenge friends
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>3. Click through</h3>
+                                <p>
+                                    User click's through to share screen, same as sharing other platform content
+                                </p>
+                            </li>
+                        </ul>
+
+                        <h2 id="scenario3">#3 Inviting friends challenge</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>User made a pfediction</p>
+                            </li>
+                            <li class="step">
+                                <h3>2. Navigating to prediction</h3>
+                                <p>
+                                    User navigates to prediction they previuosly made
+                                </p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>3. Invite CTA</h3>
+                                <p>
+                                    System displays a CTA to challenge the friends <br>
+                                    From thoi point scenario continues as in REward step of <a href="#scenario1">Sceantio #1</a>
+                                </p>
+                            </li>
+                        </ul>
+
+
+                        <h2 id="scenario4">#4 Starting XI</h2>
+                        <ul class="scenario">
+
+                            <li class="step">
+                                <h3>1. Entry point</h3>
+                                <p>The scenario begins when user has found a particular match.</p>
+                            </li>
+                            <li class="step trigger">
+                                <h3>2. Make Starting XI CTA</h3>
+                                <p>
+                                    System offers to make Starting XI
+                                </p>
+                            </li>
+                            <li class="step investment">
+                                <h3>3. Clicking through</h3>
+                                <p>
+                                    User clicks on CTA that leads to Starting XI screen
+                                </p>
+                            </li>
+                            <li class="step">
+                                <h3>4. Starting XI screen</h3>
+                                <p>
+                                    System navigates user to screen where they can select players from particular team starting a match. <br>
+                                    The selection here happens in UI designed to set and swith players with minimum cound of steps.
+                                </p>
+                            </li>
+                            <li class="step reward">
+                                <h3>5. Reward message</h3>
+                                <p>
+                                    Reward message is showed. <br>
+                                    Additionally sysem shows any Starting XI made by followed users.
+                                </p>
+                            </li>
+                        </ul>
+
+                    <footer>
+                        <a href="http://dopamineux.com">
+                            <img class="logo" src="images/logo_invert.png" alt="Dopamine UX">
+                        </a>
+                    </footer>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <script src="bower_components/jquery/dist/jquery.min.js?v=1.0"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js?v=1.0"></script>
+
+    <script src="js/main.js?v=1.0.10"></script>
+
+    <script type="text/template" id="nav-link">
+    <li>
+        <a href="{0}">{1}</a>
+    </li>
+    </script>
+
+</body>
+
+</html>

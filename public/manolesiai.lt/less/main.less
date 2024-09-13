@@ -1,0 +1,94 @@
+body {
+    color: #FFF;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    overflow-y: scroll;
+    -ms-overflow-style: scrollbar;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    * {
+        font-family: 'Open Sans', sans-serif;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    input, button, select, textarea {
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+h1 {
+    color: #fff;
+    float: left;
+    margin: 0 40px;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+strong {
+    font-weight: 600;
+}
+
+
+/*===================================
+=            Main styles            =
+===================================*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+
+    main {
+        padding: 25px;
+        
+        img {
+            width: 100%;
+        }
+  
+    }
+
+}
+
+
+
+/*=====================================
+=            Media queries            =
+=====================================*/
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    } 
+}
+
+
+
+/*==================================
+=            Animations            =
+==================================*/
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+
