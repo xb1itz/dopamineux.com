@@ -5,11 +5,12 @@ const cors = require('cors')({ origin: true });
 
 const gmailEmail = defineSecret('GMAIL_EMAIL');
 const gmailPassword = defineSecret('GMAIL_PASSWORD');
+const recapchaSecret = defineSecret('RECAPTCHA_SECRET_KEY');
 
 // Specify the secrets in the function configuration
 exports.sendEmail = onRequest(
   {
-    secrets: [gmailEmail, gmailPassword],
+    secrets: [gmailEmail, gmailPassword, recapchaSecret],
     region: 'us-central1', // Specify your desired region
   },
   async (req, res) => {
@@ -18,7 +19,20 @@ exports.sendEmail = onRequest(
         return res.status(405).send('Method Not Allowed');
       }
 
-      const { name, email, message } = req.body;
+      const { name, email, message, recapcha } = req.body;
+
+      const isCaptchaValid = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${recapchaSecret.value()}&response=${recapcha}`, {
+        method: 'POST'
+      })
+      .then(res => res.json())
+      .then(res => {
+        return res?.success;
+      });
+    
+      if (!isCaptchaValid) {
+        res.status(400).send('ReCaptcha token invalid.');
+        return;
+      }
 
       // Create Nodemailer transporter
       const transporter = nodemailer.createTransport({
@@ -40,7 +54,7 @@ exports.sendEmail = onRequest(
 
       try {
         await transporter.sendMail(mailOptions);
-        res.status(200).send('Email sent successfully');
+        res.status(200).send(JSON.stringify({ message: 'Message sent successfully' }));
       } catch (error) {
         console.error('Error sending email:', error);
         res.status(500).send('Internal Server Error');

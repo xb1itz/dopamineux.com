@@ -148,16 +148,29 @@ $(document).ready(function() {
 
 		$theForm = $(this);
 
-		// send xhr request
-		$.ajax({
-			type: $theForm.attr('method'),
-			url: $theForm.attr('action'),
-			data: $theForm.serialize(),
-			dataType: 'json',
-			success: function(data) {
-				$theForm.slideUp();
-				$theForm.parent().find('.success').slideDown();
-			}
+		grecaptcha.ready(function () {
+			grecaptcha.execute('6LeD70YqAAAAAMQ3t-nvpWEUpOljlusFHR8YCXDM', { action: 'submit' }).then(function (token) {
+				
+				$("<input />").attr("type", "hidden")
+					.attr("name", "recapcha")
+					.attr("value", token)
+					.appendTo($theForm);
+
+				$.ajax({
+					type: $theForm.attr('method'),
+					url: $theForm.attr('action'),
+					data: $theForm.serialize(),
+					dataType: 'json',
+					success: function(data) {
+						$theForm.slideUp();
+						$theForm.parent().find('.success').slideDown();
+					},
+					error: function(err) {
+						console.log(err);
+					}
+				});
+
+			});
 		});
 
 		// prevent submitting again
