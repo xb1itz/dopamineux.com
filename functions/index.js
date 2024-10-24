@@ -14,7 +14,11 @@ exports.sendEmail = onRequest(
     region: 'us-central1', // Specify your desired region
   },
   async (req, res) => {
+
+    const clientIP = req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.headers['fastly-client-ip'];
+
     cors(req, res, async () => {
+
       if (req.method !== 'POST') {
         return res.status(405).send('Method Not Allowed');
       }
@@ -27,7 +31,10 @@ exports.sendEmail = onRequest(
       .then(res => res.json())
       .then(res => {
         return res?.success;
-      });
+      })
+      .catch(err => {
+        return false;
+      })
     
       if (!isCaptchaValid) {
         res.status(400).send('ReCaptcha token invalid.');
@@ -49,7 +56,12 @@ exports.sendEmail = onRequest(
         subject: '[Dopamine] New inquiry',
         html: `<p><strong>Name:</strong> ${name}</p>
                <p><strong>Email:</strong> ${email}</p>
-               <p><strong>Message:</strong><br/>${message}</p>`,
+               <p><strong>Message:</strong><br/>${message}</p>
+               <br/>
+               <br/>
+               <pre>IP: ${clientIP}</pre>
+               <pre>${JSON.stringify(req.headers, null, 2)}</pre>
+               `,
       };
 
       try {
